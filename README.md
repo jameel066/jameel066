@@ -26,7 +26,7 @@ copy-paste projects, no inflated claims.
 | --- | --- |
 | **Web application security** | OWASP Top 10 testing: authentication and session flaws, injection, broken access control, security misconfiguration |
 | **VAPT** | Recon and enumeration, vulnerability validation, proof-of-concept evidence, remediation-focused reporting |
-| **Defensive engineering** | Hardening Windows endpoints, designing authentication that survives a config leak, keeping audit trails |
+| **Defensive engineering** | Hardening Windows endpoints, building SIEM-style detection pipelines, designing authentication that survives a config leak, keeping audit trails |
 | **Automation** | Python and PowerShell tooling that replaces manual, error-prone steps |
 
 ## 🚀 Featured projects
@@ -34,6 +34,7 @@ copy-paste projects, no inflated claims.
 | Project | What it does | Built with |
 | --- | --- | --- |
 | 🛡️ **[SENTINEL](https://github.com/jameel066/sentinel)** | Access-protection layer for Windows workstations. Progressive lockout (15 s → 30 min), webcam intruder capture, SMTP alerts — fully local, no cloud. Security designed in: PBKDF2-HMAC-SHA256 (310k iterations, per-user salt), DPAPI-encrypted credentials, constant-time comparison, zero runtime package installs. 13 unit tests + CI. | `Python` `Tkinter` `DPAPI` `PBKDF2` |
+| 📊 **[SOC Dashboard](https://github.com/jameel066/soc-dashboard)** | Self-hosted Mini-SIEM built from first principles: manual/upload/synthetic ingestion, format-agnostic parsing and normalization, SQLite event store, threshold detection for brute force / port scanning / repeated suspicious activity, and an authenticated analyst UI with charts, alert triage, search and CSV export. Hardened with CSRF tokens, login throttling, safe redirects and no default credentials. 18 tests + CI. | `Python` `Flask` `SQLite` `Chart.js` |
 | 📍 **[Live Location Tracker](https://github.com/jameel066/live-location)** | Flask + React web app for real-time location sharing with a family-safety angle. Token-based email verification, REST auth API, health endpoint for deployment monitoring. | `Python` `Flask` `React` `SQLite` |
 | ⚙️ **[ESP32 Device Monitor](https://github.com/jameel066/esp32-device-monitor)** | Firmware for a networked ESP32 device: captive-portal Wi-Fi provisioning, EEPROM-backed config, Firebase sync, NTP time, and an offline mode that buffers when the network drops. | `C++` `ESP32` `Arduino` |
 
